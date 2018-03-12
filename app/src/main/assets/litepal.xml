@@ -1,0 +1,11 @@
+<litepal>
+    <dbname value = "wzl_weather"/>
+
+    <version value = "1"/>
+
+    <list>
+        <mapping class="com.nuist.wzlweather.db.Province"/>
+        <mapping class="com.nuist.wzlweather.db.City"/>
+        <mapping class="com.nuist.wzlweather.db.County"/>
+    </list>
+</litepal>

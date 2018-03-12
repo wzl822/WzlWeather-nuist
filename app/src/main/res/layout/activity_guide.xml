@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="@drawable/bg_guide">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/guidePages"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width ="fill_parent"
+                    android:layout_height ="wrap_content"
+                    android:textSize ="12pt"
+                    android:textStyle ="bold"
+                    android:layout_marginTop ="80dp"
+                    android:gravity ="center_horizontal"
+                    android:text ="南京信息工程大学滨江学院"
+                    android:textColor="#FFFACD"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation ="vertical"
+                android:layout_width ="fill_parent"
+                android:layout_height ="wrap_content"
+                android:layout_marginTop ="480dp" >
+
+            </LinearLayout>
+
+            <TextView
+                android:text ="Copyright 2018 Wzl王志凌"
+                android:layout_width ="fill_parent"
+                android:layout_height ="98dp"
+                android:gravity ="center_horizontal"
+                android:textColor="#FFFACD"
+                android:textSize ="8pt"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="173dp" />
+
+            <TextView
+                android:layout_width ="fill_parent"
+                android:layout_height ="wrap_content"
+                android:textSize ="20pt"
+                android:textStyle ="bold"
+                android:gravity ="center_horizontal"
+                android:text ="Wzl天气"
+                android:textColor="#FFFACD"
+                android:layout_below="@+id/viewGroup"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_dot_group"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="18dp">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/shape_dot_gray"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_dot_gray"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
